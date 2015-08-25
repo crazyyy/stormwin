@@ -1,0 +1,78 @@
+.javascript {overflow:auto;}
+/* example gallery styles */
+.gallery-holder {
+	overflow: hidden;
+	margin:0 -149px 0;
+	overflow: hidden;
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.gallery{
+	position:relative;
+}
+.gallery-holder .gholder {
+	overflow: hidden;
+	width: 100%;
+}
+.gallery-holder .gmask {
+	position: relative;
+	overflow: hidden;
+	height:1%;
+}
+.gallery-holder .gmask .slideset {
+	list-style: none;
+	overflow: hidden;
+	height: 457px;
+	padding: 0;
+	margin: 0;
+	width:100%;
+}
+.gallery-holder .gmask .slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 457px;
+}
+.slideshow .gmask div.active {
+	z-index: 1;
+}
+.gallery-holder .gmask .slide .title{
+	font-family: 'bravorgregular';
+	font-size:76px;
+	color:#ffffff;
+	position:absolute;
+	left:45px;
+	bottom:45px;
+}
+.gallery-holder .pagination{
+	position:absolute;
+	right:18px;
+	top:9px;
+	z-index:1000;
+}
+.gallery-holder .pagination ul{
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+.gallery-holder .pagination ul li {
+	margin:0 0 5px;
+}
+.gallery-holder .pagination a {
+	display:block;
+	background:url(../images/bg-pagination.png) no-repeat;
+	width:19px;
+	height:19px;
+	text-indent:-9999px;
+}
+.gallery-holder .pagination .active a {
+	background:url(../images/bg-pagination-active.png) no-repeat;
+}
+.gallery-holder .pagination a:hover{
+	background:url(../images/bg-pagination-active.png) no-repeat;
+}
+@media only screen and (max-width: 480px) {
+	.gallery-holder .gmask .slide {font-size:30px;}
+}
