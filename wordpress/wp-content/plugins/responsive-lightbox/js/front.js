@@ -1,7 +1,7 @@
 ( function ( $ ) {
 
 	$( document ).on( 'ready' + rlArgs.customEvents, function () {
-		
+
 		// initialise event
 		$.event.trigger( {
 			type		: 'doResponsiveLightbox',
@@ -216,10 +216,11 @@
 							},
 							pagination				: {
 								add						: ( rlArgs.pagination === '1' ? true : false ),
-								type					: rlArgs.pagination_type
+								type					: rlArgs.paginationType
 							},
 							// forced
 							show					: false,
+							buttons					: true,
 							caption					: {
 								add						: true,
 								attributes				: ["title"]
